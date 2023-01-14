@@ -1,14 +1,4 @@
-import { useState } from 'react';
-import styles from './Login.module.css';
-
 export const Login = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const lazyImg = isLoaded ? styles['lazy-loaded'] : styles['lazy'];
-
-  setTimeout(() => {
-    setIsLoaded(true);
-  }, 300);
-
   return (
     <div className='md:bg-green-800/90 md:flex h-full w-full justify-center items-center'>
       <div className='md:flex md:px-7 max-w-6xl md:max-lg:max-h-[648px] lg:max-h-[762px] mx-auto h-full'>
@@ -25,7 +15,7 @@ export const Login = () => {
           <main className='bg-gray-100 flex-1'>
             <div className='md:hidden flex justify-center items-center h-[220px] overflow-hidden bg-[#f6dbc4]'>
               <img
-                className={`${lazyImg} object-cover object-center`}
+                className={'animate-fade-in-image opacity-0 object-cover object-center'}
                 src='img/camping.png'
                 alt='캠핑'
               />
@@ -154,7 +144,7 @@ export const Login = () => {
         </div>
         <div className='md:flex flex-1 justify-center items-center hidden overflow-hidden bg-[#f6dbc4]'>
           <img
-            className={`${lazyImg} object-cover object-center`}
+            className={'animate-fade-in-image opacity-0 object-cover object-center'}
             src='img/camping.png'
             alt='캠핑'
           />
