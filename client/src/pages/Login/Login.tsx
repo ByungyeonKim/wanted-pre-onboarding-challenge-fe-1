@@ -115,7 +115,7 @@ export const Login = () => {
             </section>
           </main>
           <footer className='bg-gray-100'>
-            <div className='md:space-y-7 flex flex-col justify-center items-center max-w-md mx-auto space-y-4 p-4'>
+            <div className='md:space-y-6 flex flex-col justify-center items-center max-w-md mx-auto space-y-4 p-4'>
               <div>
                 <p className='mx-auto max-w-md text-center leading-relaxed text-gray-500 lg:text-left'>
                   회원가입은 매우 간단합니다. 로그인을 통해 강력한 TODO 기능들을 경험해보세요!
