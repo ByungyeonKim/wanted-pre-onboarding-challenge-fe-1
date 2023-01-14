@@ -2,13 +2,3 @@ img {
   transition: opacity 0.9s cubic-bezier(0.33, 1, 0.68, 1),
     transform 0.9s cubic-bezier(0.33, 1, 0.68, 1);
 }
-
-.lazy {
-  opacity: 0;
-  transform: scale(1.2);
-}
-
-.lazy-loaded {
-  opacity: 1;
-  transform: scale(1);
-}
